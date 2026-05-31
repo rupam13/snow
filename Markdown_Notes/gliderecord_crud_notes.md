@@ -1,3 +1,57 @@
+my raw
+
+starts with 
+var a=new glideRecord('sys_user')
+
+two methods
+a.initialize();-- to start without default values will not be populated
+     or
+a.newRecord();--- to stat with defalt values
+_______________________________________________________
+var gr = new GlideRecord('incident');
+gr.initialize();
+gr.setValue('caller_id', gs.getUserID());           // sys_id of current user
+gr.setValue('short_description', gs.getUserDisplayName()); // user’s display name
+var sysId = gr.insert();
+
+gs.info("New incident created with sys_id: " + sysId);
+____________________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+______________________________________________________________________________________________________________
+
 # ServiceNow GlideRecord CRUD Operations: Detailed Reference Manual
 
 `GlideRecord` is the primary server-side class in ServiceNow used for database operations. It allows developers to perform standard **CRUD** (Create, Read, Update, Delete) operations on ServiceNow tables.
